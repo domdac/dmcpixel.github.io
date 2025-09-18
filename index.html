@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DMCpixel — Portfolio</title>
+  <meta name="description" content="Portfolio de DMCpixel — Apps & bots: Pacifood, Battue+, SafeCompta, BYRUS.">
+  <meta property="og:title" content="DMCpixel — Portfolio">
+  <meta property="og:description" content="Apps & bots: Pacifood, Battue+, SafeCompta, BYRUS.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-cover.png">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <span class="logo">DMCpixel</span>
+        <span class="tag">Studio d’apps & IA</span>
+      </div>
+      <nav class="nav">
+        <a href="#projets">Projets</a>
+        <a href="#telechargements">Téléchargements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Construire des apps utiles, <span class="accent">vite</span> et bien.</h1>
+      <p>Pacifood (recettes & budget), SafeCompta (micro‑entreprise), Battue+ (outdoor), BYRUS (sécurité).  
+      Tout est pensé <b>local‑first</b>, simple et efficace.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projets">Voir les projets</a>
+        <a class="btn ghost" href="https://dacunha5.gumroad.com/l/kxuyx" target="_blank" rel="noopener">Abonnements</a>
+      </div>
+    </div>
+    <div class="grid-bg" aria-hidden="true"></div>
+  </section>
+
+  <section id="projets" class="section">
+    <div class="container">
+      <h2>Projets</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Pacifood</h3>
+          <p>Recettes adaptées à ton budget & stock. Version gratuite + abonnements <b>5€</b> et <b>10€</b>.</p>
+          <div class="actions">
+            <a class="btn" href="#" aria-disabled="true">Demo</a>
+            <a class="btn ghost" href="#">Docs</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>SafeCompta</h3>
+          <p>Compta micro‑entreprise simple : URSSAF, impôts, PDF prêts à imprimer. Tauri desktop.</p>
+          <div class="actions">
+            <a class="btn" href="#" aria-disabled="true">Télécharger</a>
+            <a class="btn ghost" href="#">Guide</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Battue+</h3>
+          <p>Cartes, boussole, traces GPX, météo vent. Pensé pour l’outdoor.</p>
+          <div class="actions">
+            <a class="btn" href="#" aria-disabled="true">APK</a>
+            <a class="btn ghost" href="#">Changelog</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>BYRUS</h3>
+          <p>Projet sécurité local‑first, anti‑malware/IA, avec logo félin & anneau rouge.</p>
+          <div class="actions">
+            <a class="btn" href="#" aria-disabled="true">Demo</a>
+            <a class="btn ghost" href="#">Roadmap</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="telechargements" class="section alt">
+    <div class="container">
+      <h2>Téléchargements</h2>
+      <ul class="downloads">
+        <li><span>SafeCompta_v2 Setup (Windows)</span><a class="btn small" href="#" aria-disabled="true">.exe</a></li>
+        <li><span>Battue+ APK (Android)</span><a class="btn small" href="#" aria-disabled="true">.apk</a></li>
+      </ul>
+      <p class="note">Besoin d’un lien ? Ajoute tes builds dans le dossier <code>downloads/</code> du dépôt.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Mail : <a href="mailto:contact@dmcpixel.fr">contact@dmcpixel.fr</a> — Instagram : <a href="https://instagram.com/dmcpixel" target="_blank" rel="noopener">@dmcpixel</a></p>
+      <p class="small">© <span id="year"></span> DMCpixel — Tous droits réservés.</p>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
