@@ -5,23 +5,34 @@
   <title>Politique de confidentialité – Pacifood</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="robots" content="index,follow" />
-  <meta name="theme-color" content="#17a34a" />
+  <meta name="theme-color" content="#16a34a" />
+  <link rel="canonical" href="https://domdac.github.io/privacy.html" />
+  <meta name="description" content="Pacifood respecte votre vie privée : données stockées localement, caméra uniquement pour l’OCR, aucune vente de données. Détails des permissions et suppression de compte." />
   <style>
-    :root { --fg:#0f172a; --muted:#475569; --bg:#ffffff; --card:#f8fafc; --brand:#16a34a; }
+    :root { --fg:#0f172a; --muted:#475569; --bg:#ffffff; --card:#f8fafc; --brand:#16a34a; --border: rgba(148,163,184,.25); }
     @media (prefers-color-scheme: dark) {
-      :root { --fg:#e5e7eb; --muted:#9ca3af; --bg:#0b1220; --card:#0f172a; }
+      :root { --fg:#e5e7eb; --muted:#9ca3af; --bg:#0b1220; --card:#0f172a; --border: rgba(148,163,184,.2); }
     }
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,Arial,sans-serif;line-height:1.6}
-    .wrap{max-width:820px;margin:0 auto;padding:32px 20px}
+    * { box-sizing: border-box }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Inter,Ubuntu,Arial,sans-serif;line-height:1.6}
+    .wrap{max-width:860px;margin:0 auto;padding:32px 20px}
     header{margin-bottom:24px}
     h1{font-size:clamp(26px,3vw,34px);margin:0 0 8px 0}
-    .badge{display:inline-block;background:var(--card);border:1px solid rgba(148,163,184,.25);padding:4px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    .badge{display:inline-block;background:var(--card);border:1px solid var(--border);padding:4px 10px;border-radius:999px;color:var(--muted);font-size:13px}
     h2{margin-top:28px;font-size:clamp(20px,2.2vw,24px)}
+    h3{margin-top:18px;font-size:18px}
     p,li{color:var(--fg)}
     a{color:var(--brand);text-decoration:none}
     a:hover{text-decoration:underline}
-    .card{background:var(--card);border:1px solid rgba(148,163,184,.25);border-radius:12px;padding:16px;margin:16px 0}
-    footer{margin-top:32px;font-size:14px;color:var(--muted)}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin:16px 0}
+    .grid{display:grid;gap:12px}
+    .grid.cols{grid-template-columns: 1fr}
+    @media (min-width:700px){ .grid.cols{grid-template-columns: 1fr 1fr} }
+    code.badge{font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+    footer{margin-top:32px;font-size:13px;color:var(--muted)}
+    nav{margin:6px 0 18px 0;font-size:14px}
+    nav a{margin-right:12px}
+    ul.tight>li{margin:4px 0}
   </style>
 </head>
 <body>
@@ -29,49 +40,118 @@
     <header>
       <h1>Politique de confidentialité – Pacifood</h1>
       <span class="badge">Dernière mise à jour : Octobre 2025</span>
+      <nav>
+        <a href="https://domdac.github.io/">Accueil</a>
+        <a href="#permissions">Permissions</a>
+        <a href="#suppression">Suppression du compte</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
     <p>
-      Pacifood respecte votre vie privée. L’application ne collecte ni ne partage vos données personnelles
-      sans votre consentement. La plupart des informations sont stockées <strong>localement sur votre appareil</strong>.
+      Pacifood respecte votre vie privée. L’application ne collecte ni ne vend vos données personnelles.
+      <strong>La majorité des informations sont stockées localement sur votre appareil</strong> (stock, recettes, préférences).
     </p>
 
-    <h2>📷 Utilisation de la caméra</h2>
+    <h2 id="camera">📷 Utilisation de la caméra</h2>
     <div class="card">
       <p>
-        La caméra est utilisée uniquement pour la fonction de <strong>scan OCR</strong> (extraction de texte depuis une
-        recette papier ou un emballage). Les images sont <strong>traitées localement sur votre appareil</strong>
-        et <strong>ne sont pas envoyées</strong> à nos serveurs.
+        La caméra est utilisée uniquement pour la fonction de <strong>scan OCR</strong>
+        (extraction de texte depuis une recette papier ou un emballage).
+        Les images sont <strong>traitées localement sur votre appareil</strong> et
+        <strong>ne sont pas envoyées</strong> à nos serveurs.
       </p>
     </div>
 
-    <h2>💾 Données locales</h2>
-    <p>
-      Vos stocks, recettes et préférences sont enregistrés <strong>en local (Hive)</strong>. Aucune synchronisation
-      distante n’est effectuée par Pacifood.
-    </p>
-
-    <h2>📢 Publicités (le cas échéant)</h2>
-    <p>
-      Pacifood peut afficher des publicités via <strong>Google AdMob</strong>. Google peut collecter des
-      identifiants d’appareil à des fins de mesure et de prévention de fraude.
-      Consultez la politique de Google : <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a>.
-    </p>
-
-    <h2>🔐 Partage et conservation</h2>
-    <ul>
-      <li>Pacifood <strong>ne vend pas</strong> vos données.</li>
-      <li>Aucune donnée n’est transmise à des serveurs par l’app elle-même.</li>
-      <li>Les SDK tiers (ex. AdMob) peuvent traiter des données aux fins mentionnées ci-dessus.</li>
+    <h2 id="donnees-locales">💾 Données stockées localement</h2>
+    <ul class="tight">
+      <li><strong>Stock &amp; recettes</strong> : enregistrés en local via Hive (base de données embarquée).</li>
+      <li><strong>Préférences</strong> : portions, filtres et paramètres sont enregistrés en local.</li>
+      <li><strong>Aucune synchronisation distante</strong> n’est effectuée par Pacifood.</li>
     </ul>
 
-    <h2>📧 Contact</h2>
+    <h2 id="publicites">📢 Publicités</h2>
     <p>
-      Pour toute question ou demande liée à la confidentialité : <a href="mailto:dmcpixel3@gmail.com">dmcpixel3@gmail.com</a>
+      Pacifood peut afficher des publicités via <strong>Google AdMob</strong>. Google (et ses partenaires) peuvent traiter
+      des identifiants d’appareil à des fins de mesure, diffusion d’annonces et prévention de fraude.
+      Voir : <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a>.
+    </p>
+    <p class="card">
+      <strong>Contrôle utilisateur :</strong> selon votre région, un écran de consentement peut vous être présenté par Google.
+      Vous pouvez également limiter la personnalisation des annonces dans les réglages de votre appareil.
+    </p>
+
+    <h2 id="securite">🔐 Sécurité &amp; partage</h2>
+    <ul class="tight">
+      <li>Pacifood <strong>ne vend pas</strong> vos données.</li>
+      <li>Les communications réseau utilisées par des SDK tiers (ex. AdMob) sont <strong>chiffrées en transit</strong> (HTTPS/TLS).</li>
+      <li>Aucune donnée n’est transférée vers nos propres serveurs.</li>
+    </ul>
+
+    <h2 id="permissions">🛂 Permissions utilisées</h2>
+    <div class="grid cols">
+      <div class="card">
+        <h3><code class="badge">android.permission.CAMERA</code></h3>
+        <p>Utilisée pour le scan OCR des recettes. Usage ponctuel, contrôlé par l’utilisateur.</p>
+      </div>
+      <div class="card">
+        <h3><code class="badge">android.permission.INTERNET</code></h3>
+        <p>Nécessaire pour charger les annonces AdMob et liens externes (ex. politique Google).</p>
+      </div>
+      <div class="card">
+        <h3><code class="badge">android.permission.ACCESS_NETWORK_STATE</code></h3>
+        <p>Permet de détecter l’état du réseau afin d’éviter des appels inutiles.</p>
+      </div>
+      <div class="card">
+        <h3><code class="badge">POST_NOTIFICATIONS (Android 13+)</code></h3>
+        <p><em>(Si activé dans votre build)</em> : pour d’éventuels rappels/notifications. Affichées seulement si vous acceptez.</p>
+      </div>
+    </div>
+
+    <h2 id="compte">👤 Compte &amp; authentification</h2>
+    <p>
+      Pacifood fonctionne <strong>sans compte en ligne</strong>. Un <strong>pseudo compte local</strong> (e-mail/mot de passe
+      hors-ligne) peut être proposé pour verrouiller l’accès à l’appareil. Ces informations ne quittent pas votre téléphone.
+    </p>
+
+    <h2 id="suppression">🗑️ Suppression du compte / des données</h2>
+    <div class="card">
+      <p>
+        Vous pouvez supprimer vos données locales directement depuis l’application (Paramètres → Réinitialiser / Supprimer le compte local).
+        La suppression est <strong>immédiate et définitive sur votre appareil</strong> et <strong>aucune copie serveur</strong> n’existe.
+      </p>
+      <p>
+        Une page d’information publique est également disponible :
+        <a href="https://domdac.github.io/delete-account.html" target="_blank" rel="noopener">domdac.github.io/delete-account.html</a>
+      </p>
+    </div>
+
+    <h2 id="mineurs">👪 Enfants &amp; familles</h2>
+    <p>
+      L’application s’adresse principalement aux adultes et adolescents intéressés par l’organisation des repas.
+      Aucun contenu inapproprié n’est proposé. Si un enfant utilise l’app, un adulte doit superviser.
+    </p>
+
+    <h2 id="droits">📜 Vos droits</h2>
+    <ul class="tight">
+      <li><strong>Accès / rectification / suppression</strong> : tout est local ; vous pouvez modifier/supprimer vos données dans l’app.</li>
+      <li><strong>Consentement publicités</strong> : géré par l’écran AdMob et/ou les réglages de votre appareil.</li>
+    </ul>
+
+    <h2 id="evolutions">🔁 Évolutions de cette politique</h2>
+    <p>
+      Cette page peut évoluer en cas de changement d’API, de permissions, ou d’ajout de fonctionnalités (ex. sauvegarde cloud).
+      La date de mise à jour sera ajustée et les changements importants seront signalés dans l’app.
+    </p>
+
+    <h2 id="contact">📧 Contact</h2>
+    <p>
+      Pour toute question ou demande liée à la confidentialité : 
+      <a href="mailto:dmcpixel3@gmail.com">dmcpixel3@gmail.com</a>
     </p>
 
     <footer>
-      © Pacifood — Document d’information, sans valeur contractuelle. Cette page pourra évoluer.
+      © Pacifood — Document d’information. Cette page n’accorde aucun droit supplémentaire et peut être mise à jour.
     </footer>
   </main>
 </body>
