@@ -2,82 +2,60 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Politique de confidentialité — NeoBudget</title>
+  <meta name="robots" content="noindex">
   <style>
-    body {
-      font-family: "Segoe UI", Roboto, sans-serif;
-      background-color: #0f0f0f;
-      color: #e0e0e0;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(90deg, #2b2b2b, #1c1c1c);
-      padding: 20px;
-      text-align: center;
-      border-bottom: 2px solid #444;
-    }
-    h1 {
-      color: #ffcc00;
-      margin: 0;
-      font-weight: 600;
-    }
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h2 {
-      color: #ffcc00;
-      border-left: 4px solid #ffcc00;
-      padding-left: 10px;
-    }
-    a {
-      color: #5eb8ff;
-    }
-    footer {
-      text-align: center;
-      margin: 50px 0 30px;
-      font-size: 14px;
-      color: #999;
-    }
+    :root{--bg:#0f0f10;--card:#17191e;--txt:#e7e7e7;--muted:#a9b0bc;--accent:#ffcc00;}
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Inter,Arial,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+    header{background:linear-gradient(90deg,#22252b,#171a1f);border-bottom:2px solid #2a2f37;padding:24px 16px;text-align:center}
+    h1{margin:0;color:var(--accent);font-weight:700}
+    main{max-width:920px;margin:40px auto;padding:0 20px}
+    h2{color:var(--accent);border-left:4px solid var(--accent);padding-left:10px;margin-top:28px}
+    p,li{color:var(--txt)}
+    ul{padding-left:20px}
+    a{color:#5eb8ff;text-decoration:none} a:hover{text-decoration:underline}
+    .card{background:var(--card);border:1px solid #262b33;border-radius:14px;padding:18px;margin:14px 0}
+    .meta{color:var(--muted);font-size:14px}
+    footer{max-width:920px;margin:40px auto 30px;padding:0 20px;text-align:center;color:var(--muted);font-size:14px}
   </style>
 </head>
 <body>
   <header>
     <h1>Politique de confidentialité — NeoBudget</h1>
   </header>
-  <main>
-    <p><strong>Dernière mise à jour :</strong> 30 octobre 2025</p>
 
-    <p>Cette politique de confidentialité décrit comment l’application <strong>NeoBudget</strong>, développée par <strong>DMC Pixel</strong>, traite vos données et respecte votre vie privée.</p>
+  <main>
+    <p class="meta"><strong>Dernière mise à jour&nbsp;:</strong> 7 novembre 2025</p>
+
+    <div class="card">
+      <p>Cette politique décrit comment l’application <strong>NeoBudget</strong>, éditée par <strong>DMC Pixel</strong>, traite vos données et respecte votre vie privée.</p>
+    </div>
 
     <h2>1. Données collectées</h2>
-    <p>NeoBudget ne collecte, ne partage et ne transmet <strong>aucune donnée personnelle</strong>. Toutes les informations que vous saisissez (revenus, dépenses, budgets, épargne) sont enregistrées uniquement sur votre appareil, dans une base de données locale (Hive).</p>
+    <p><strong>NeoBudget ne collecte, ne partage et ne transmet aucune donnée personnelle.</strong> Toutes les informations saisies (revenus, dépenses, imprévus, crédits, épargne, réglages) sont stockées <strong>uniquement sur votre appareil</strong> dans une base locale (Hive). Aucune synchronisation serveur, aucun compte requis.</p>
 
-    <h2>2. Publicités</h2>
-    <p>L’application utilise <strong>Google AdMob</strong> pour afficher des publicités occasionnelles.  
-    Google peut collecter certaines données techniques anonymes (identifiant publicitaire, type d’appareil, version Android) pour proposer des annonces adaptées.  
-    Ces données ne permettent pas de vous identifier personnellement.</p>
+    <h2>2. Accès réseau</h2>
+    <p>L’application fonctionne hors-ligne. Un accès Internet peut être utilisé ponctuellement pour des liens externes (ex.&nbsp;: contact email) mais <strong>aucune information de budget n’est transmise</strong>.</p>
 
-    <p>Vous pouvez consulter la politique de confidentialité de Google ici :  
-    <a href="https://policies.google.com/privacy?hl=fr" target="_blank">https://policies.google.com/privacy?hl=fr</a></p>
-
-    <h2>3. Droits de l’utilisateur</h2>
+    <h2>3. Vos contrôles</h2>
     <ul>
-      <li>Vous pouvez effacer toutes vos données via le bouton “Réinitialiser les données” dans les paramètres.</li>
-      <li>Vous pouvez désinstaller l’application à tout moment pour supprimer définitivement toutes les informations locales.</li>
+      <li><strong>Export / sauvegarde</strong> : vous pouvez sauvegarder ou restaurer vos données locales (selon les options disponibles dans l’app).</li>
+      <li><strong>Effacement</strong> : depuis les Réglages, vous pouvez supprimer tout ou partie des données (mouvements, crédits, épargne…).</li>
+      <li><strong>Désinstallation</strong> : supprime définitivement les données locales de l’app sur l’appareil.</li>
     </ul>
 
     <h2>4. Sécurité</h2>
-    <p>Toutes les données restent sur votre appareil et ne sont pas accessibles par d’autres applications.  
-    NeoBudget ne nécessite pas de connexion Internet pour fonctionner (sauf pour afficher les publicités).</p>
+    <p>Les données restent locales et ne sont pas accessibles par d’autres applications. Nous recommandons de protéger votre appareil (code/PIN/biométrie) et d’effectuer des sauvegardes régulières si vous changez de téléphone.</p>
 
-    <h2>5. Contact</h2>
-    <p>Pour toute question relative à la confidentialité ou à vos données, contactez-nous à :  
-    <a href="mailto:dmcpixel3@gmail.com">dmcpixel3@gmail.com</a></p>
+    <h2>5. Enfants</h2>
+    <p>NeoBudget ne cible pas spécifiquement les enfants. L’app ne collecte pas de données et ne propose pas de fonctionnalités sociales.</p>
+
+    <h2>6. Modifications</h2>
+    <p>Cette politique peut évoluer pour des raisons légales ou techniques. La date de mise à jour en haut de page reflète la version en vigueur.</p>
+
+    <h2>7. Contact</h2>
+    <p>Pour toute question, contactez&nbsp;: <a href="mailto:dmcpixel3@gmail.com">dmcpixel3@gmail.com</a></p>
   </main>
 
   <footer>
